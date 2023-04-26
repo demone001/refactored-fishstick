@@ -279,6 +279,7 @@ button:hover{
 }
 #slika1 img{
     width: 330px;
+    margin-top: 50px;
 }
 .Autor{
     display: flex;
