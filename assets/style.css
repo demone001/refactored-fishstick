@@ -233,6 +233,7 @@ footer h4{
     background-image: url("../slike/wood2.jpg");
     background-position: center;
     height: 500px;
+    margin-bottom: 150px;
 }
 #main-contact h1{
     color:#000;
