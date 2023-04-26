@@ -6,7 +6,9 @@
     font-family: 'Work Sans', sans-serif;    
 }
 body {
-    background-color:beige;
+    background-image: url("../slike/makaze2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover ;
 }
 .cleaner{
     clear:both;
@@ -31,9 +33,13 @@ a{
     color: black;
     font-size: 20px;
 }
+a:hover{
+    color:orange;
+}
 li, ul{
     list-style-type: none;
     transition: 1s;
+    list-style-type: disc;
 }
 .navigation{
     margin-inline-start: auto;
@@ -47,6 +53,7 @@ li, ul{
 h1{
     text-align: center;
     font-family: serif;
+    color: #987554;
 }
 p{
     text-align: center;
@@ -57,7 +64,7 @@ h2{
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
-    font-family: fantasy;
+    font-family: unset;
     color: orange;
 }
 h4{
@@ -69,6 +76,9 @@ img{
     border-radius: 6%;
     margin-left: 30px;
 }
+#onama{
+    margin-top: 15px;
+}
 .okvir{
     display: flex;
 }
@@ -78,7 +88,7 @@ img{
 .text{
     width: 400px;
     background-color: bisque;
-    height: 300px;
+    height: 250px;
     border-radius: 20px;
 }
 .okvir h3{
@@ -87,6 +97,21 @@ img{
 .okvir .btn-primary{
     margin-left: 180px;
 }
+@keyframes slide {
+    0% {
+       opacity: 0;
+       transform: translateX(-20px);
+    }
+    100% {
+       opacity: 1;
+       transform: translateX(0);
+    }
+ }  	
+
+ .text{
+    animation-name: slide;
+    animation-duration: 2s;
+ }
 #novo{
     border-bottom: 1px solid;
 }
@@ -107,17 +132,54 @@ img{
 .parfem .text{
     margin-right: -30px;
 }
-footer{
-    display: flex;
-    justify-content: center;
+#tips{
+    background-color: #987554;
+    margin-left: 500px;
+    margin-right: 500px;
+    border-radius: 10%;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+#tips p{
+    color: blanchedalmond;
+    font-family: revert;
+    padding-bottom: 10px;
+}
+.footer{
     background-color: burlywood;
-    height: 120px;
+    height: 110px;
+    width: 100%;
+    border: 3px solid;
+    margin:20px auto;
+    padding: 20px;
+}
+#social{
+    width: 40%;
+    float: left;
+    margin-left: 80px;
+}
+#social ul li{
+    list-style-type: none;
+    display: inline;
+    font-size: 50px;
+}
+#rights {
+    width: 40%;
+    margin-left: 150px;
+}
+#contact-info{
+    width: 40%;
+    float: right;
+    margin-right: 20px;
+    display: inherit;
+    font-style: oblique;
 }
 footer p{
     margin: 10px;
 }
 footer h4{
     text-decoration: underline;
+    justify-content: space-around;
 }
 .btn-primary{
 	text-decoration:none;
@@ -168,9 +230,12 @@ footer h4{
     color: brown;
 }
 #main-contact{
-    background-image: url("../slike/orange.jpg");
+    background-image: url("../slike/wood2.jpg");
     background-position: center;
     height: 500px;
+}
+#main-contact h1{
+    color:#000;
 }
 #main-contact form{
     position:absolute;
@@ -209,6 +274,7 @@ button:hover{
     margin-top: 19px;
     width: 300px;
     margin-left: 800px;
+    border-radius: 7%;
 }
 #slika1 img{
     width: 330px;
@@ -216,8 +282,30 @@ button:hover{
 .Autor{
     display: flex;
     justify-content: space-evenly;
+    margin-bottom: 220px;
 }
 #my-story{
     width: 40%;
     margin-top: 70px;
+    background-color: bisque;
+    height: 230px;
+    border-radius: 5%;
+    font-size: 19px;
+
 }
+.bg-slike{
+    display: flex;
+    justify-content: space-around;
+}
+.bg-slike img{
+    box-shadow: 0px 0px 10px #9a9a9a;
+    width: 360px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.bg-slike img:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
